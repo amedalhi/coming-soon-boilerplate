@@ -1,5 +1,14 @@
 ---
+import config from "@config/config.json"
 
+const { text } = config.heroTitle;
 ---
 
-<h1>Coming Soon Starter is launching soon</h1>
+<h1>{text}</h1>
+
+<style>
+    h1 {
+        font-size: var(--step-2);
+        font-weight: 700;
+    }
+</style>

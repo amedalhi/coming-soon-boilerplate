@@ -1,5 +1,17 @@
 ---
+import config from '@config/config.json';
 
+const { imageLogo, textLogo} = config.header;
+
+const logo = imageLogo ? "image logo here" : textLogo
 ---
 
-<div>Coming Soon Starter</div>
+<p>{logo}</p>
+
+<style>
+    p {
+        font-size: var(--step-0);
+        font-weight: 700;
+        letter-spacing: -0.75px;
+    }
+</style>

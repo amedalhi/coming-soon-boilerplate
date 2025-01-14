@@ -1,8 +1,26 @@
 ---
+import config from "@config/config.json";
 
+const {buttonText} = config.signUpForm;
 ---
 
 <form>
   <input type="email" name="email" id="email" placeholder="Your email" />
-  <button type="submit">Sign up</button>
+  <button type="submit">{buttonText}</button>
 </form>
+
+<style>
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  input {
+    padding: var(--space-2xs);
+  }
+
+  button {
+    padding: var(--space-2xs);
+  }
+</style>

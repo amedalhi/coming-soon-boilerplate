@@ -1,5 +1,14 @@
 ---
+import config from "@config/config.json";
 
+const { text } = config.heroDescription;
 ---
 
-<p>Check back soon for updates</p>
+<p>{text}</p>
+
+<style>
+    p {
+        font-size: var(--step-0);
+        font-weight: 500;
+    }
+</style>

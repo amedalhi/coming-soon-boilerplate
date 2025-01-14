@@ -1,15 +1,23 @@
 ---
-import Logo from '@components/Logo.astro';
 import BaseLayout from '@layouts/BaseLayout.astro';
 import HeroTitle from '@components/HeroTitle.astro';
 import Description from '@components/Description.astro';
 import SignUpForm from '@components/SignUpForm.astro';
-
 ---
 
 <BaseLayout>
-	<Logo />6
-	<HeroTitle />
-	<Description />
-	<SignUpForm />
+	<main>
+		<HeroTitle />
+		<Description />
+		<SignUpForm />
+	</main>
 </BaseLayout>
+
+<style>
+	main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+</style>
