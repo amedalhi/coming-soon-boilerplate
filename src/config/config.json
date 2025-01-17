@@ -11,7 +11,9 @@
   },
 
   "heroTitle": {
-    "text": "Coming Soon Starter coming soon" 
+    "thing": "Stay Tuned",
+    "text": "Coming Soon",
+    "subtext": "A ready to use boilerplate built with Astro"
   },
 
   "heroDescription": {
@@ -27,8 +29,8 @@
     "links": [
       {
         "instagram": {
-        "include": true,
-        "link": "www.instagram.com/myinsta"
+          "include": true,
+          "link": "www.instagram.com/myinsta"
         }
       },
       {
