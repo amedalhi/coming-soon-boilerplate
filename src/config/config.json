@@ -11,7 +11,7 @@
   },
 
   "heroTitle": {
-    "thing": "Stay Tuned",
+    "tagline": "Stay Tuned",
     "text": "Coming Soon",
     "subtext": "A ready to use boilerplate built with Astro"
   },

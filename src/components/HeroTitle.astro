@@ -1,16 +1,23 @@
 ---
 import config from "@config/config.json"
 
-const { text } = config.heroTitle;
+const { tagline, text } = config.heroTitle;
 ---
 
-<p>Stay Tuned</p>
+<p>{tagline}</p>
 <h1>{text}</h1>
 
 <style>
     h1 {
         font-size: var(--step-6);
         font-weight: 700;
+        text-transform: capitalize;
+        letter-spacing: -0.85px;
+    }
+
+    p {
+        font-size: var(--step-1);
+        font-weight: 500;
         text-transform: uppercase;
     }
 </style>
